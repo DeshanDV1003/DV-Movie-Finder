@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #00ffe0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  #app-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px #00ffe0;
+    animation: flicker 3s infinite;
+  }
+  
+  input#movieTag {
+    background-color: #1c1c1c;
+    border: 2px solid #00ffe0;
+    border-radius: 8px;
+    color: #00ffe0;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    outline: none;
+    box-shadow: 0 0 10px #00ffe0;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  
+  input#movieTag:focus {
+    box-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+  }
+  
+  button {
+    background-color: transparent;
+    border: 2px solid #00ffe0;
+    border-radius: 8px;
+    color: #00ffe0;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffe0;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+  }
+  
+  button:hover {
+    background-color: #00ffe0;
+    color: #0f0f0f;
+    box-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+  }
+  
+  #title {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #00ffe0;
+    animation: flicker 2s infinite;
+  }
+  
+  #poster {
+    margin-top: 20px;
+    max-width: 300px;
+    border: 2px solid #00ffe0;
+    box-shadow: 0 0 20px #00ffe0;
+    animation: zoomIn 1.5s ease-in;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    max-width: 80%;
+    animation: fadeIn 1s ease-in;
+    line-height: 1.5;
+  }
+  
+  #imdb-link {
+    margin-top: 20px;
+    color: #00ffe0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid #00ffe0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ffe0;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+  }
+  
+  #imdb-link:hover {
+    background-color: #00ffe0;
+    color: #0f0f0f;
+    box-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+  }
+  
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 1;
+    }
+    20%, 24%, 55% {
+      opacity: 0.3;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
